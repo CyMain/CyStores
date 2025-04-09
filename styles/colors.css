@@ -1,5 +1,8 @@
 :root{
     --darkModeHeader1:#020731;
     --darkModeBackground1:#000210;
-    --darkModeMajorFontColor:#0a1fdb;
+    --darkModeMajorFontColor:#3971FE;
+    --darkModeButtonColor1: #00053A;
+    --darkModeButtonHoverColor1: rgb(30, 30, 83);
+    --darkModeSubsidiary1: #37394e;
 }

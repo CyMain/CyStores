@@ -1,0 +1,42 @@
+#undetected{
+    display: none;
+    
+    div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button:nth-child(1){
+            margin-bottom: clamp(30px, 20%, 60px) ;
+        }
+        button{
+            font-size: clamp(20px, 4vw, 24px);
+            font-weight: bold;
+            height: clamp(20px, 20vw, 80px);
+            width: clamp(20px, 100%, 450px);
+            color: var(--darkModeMajorFontColor);
+            background-color: var(--darkModeButtonColor1);
+
+            &:hover{
+                background-color: var(--darkModeButtonHoverColor1);
+            }
+        }
+    }
+}
+
+#register{
+    display: none;
+}
+
+
+#login{
+    display: none;
+}
+
+#greeting{
+    display: flex;
+
+    #greeting-text{
+        text-align: center;
+        font-size: clamp(16px, 6vw, 24px);
+    }
+}
