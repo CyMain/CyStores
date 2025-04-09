@@ -9,6 +9,13 @@ body{
     background-color: var(--darkModeBackground1);
 }
 
+header{
+    background-color: var(--darkModeHeader1);
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+
 button, .s-button{
     cursor: pointer;
     border: none;
