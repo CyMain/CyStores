@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    figure{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .middle{
+        display: flex;
+        gap: 10%;
+    }
+
+    #search-bar{
+        display: flex;
+        align-items: center;
+        input{
+            border: none;
+            border-radius: 20px;
+            padding: 4%;            
+        }
+    }
+    nav{
+        display: flex;
+        gap: 5%;
+        a{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 0 2%;
+
+            &:hover{
+                background-color: var(--darkModeHeaderHover1);
+            }
+        }
+    }
+}
+
+@media (max-width:600px){
+
+}
