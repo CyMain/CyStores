@@ -1,87 +1,210 @@
-.furniture-for-you{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10%;
+section{
+    margin:3vh 0;
     
-    .slideable-for-you{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        height: 100%;
-        max-width: 100%;
-        overflow: hidden;
+    h2{
+        margin-bottom: 2%;
+    }
+}
 
-        .left-slide-button, .right-slide-button{
+#alluring-background{
+    margin-top: 10vh;
+    aspect-ratio: 4/1;
+    box-shadow: 0 2px 10px 10px rgba(0, 0, 0, 0.37);
+    figure{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+#top-picks{
+    .top-picks-slider{
+        position: relative;
+        display: flex;
+        height: clamp(40px, 30vw, 500px);
+        overflow: hidden;
+    }
+    
+    .top-picks-view{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        padding: 2%;
+
+        .top-picks-list{
+            display: flex;
+            height: 100%;
+            width: max-content;
+            animation: slide-left 10s linear infinite;
+        }
+
+        .top-pick{
             cursor: pointer;
-            display: flex; l;''
-            width: clamp(20px, 10%, 80px);
+            display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--darkModeBackground1);
+            height: 100%;
+            width: 100vw;
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+
+    .scroll-right-button, .scroll-left-button{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: transparent;
+        width: clamp(20px, 10%, 80px);
+
+        *{
+            transition: all 0.25s;
+        }
+
+        img{
+            width: 40%;
+            opacity: 0.1;
+        }
+
+        &:hover{
+            background-color: var(--darkModeButtonHoverColor1);
+            img{
+                opacity: 1;
+            }
+            
+        }
+    }
+
+    .scroll-right-button{
+        right: 0;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .scroll-left-button{
+        left: 0;
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.for-you{
+    display: flex;
+    flex-direction: column;
+    
+    .slideable-for-you{
+        max-height: 400px;
+        padding: 2% 0;
+        position: relative;
+        box-shadow: inset 0 0 4px 8px black;
+        background-color: var(--darkModeBackground2);
+        display: flex;
+        justify-content: center;      
+        align-items: center;
+
+        .left-slide-button, .right-slide-button{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-color: transparent;
+            width: 10%;
+            z-index: 99;
 
             img{
-                object-fit: cover;
+                width: 40%;
             }
 
             &:hover{
-                background-color: var(--darkModeProductBackgroundHover);
+                background-color: var(--darkModeButtonHoverColor1);
             }
         }
 
+        .left-slide-button{
+            left: 0;
+            border-radius: 20px 0 0 20px;
+            
+        }
+
+        .right-slide-button{
+            right: 0;
+            border-radius: 0 20px 20px 0;
+        }
+
         .product-view{
-            width: 100%;
-            max-width: 400px;
+            padding: 0 10%;
+            width: clamp(200px, 100%, 220px);
+            display: flex;
+            place-items: center;
+            place-content: center;
             overflow: hidden;
         }
 
         .product-preview{
             display: flex;
-            transition: transform 0.5s ease;
+            height: 100%;
+            gap: 10%;
             width: max-content;
+            align-items: center;
         }
 
         .product-preview-mini{
-            flex: 0 0 25%;
-            max-width: 100%;
-            aspect-ratio: 1/1;
+            flex: 0 0 clamp(200px, 100%, 400px);
             position: relative;
             cursor: pointer;
-            margin: 0 5px;
-            background-color: var(--darkModeProductBackground);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
+            height: clamp(40px, 100%, 200px);
+
+            *{
+                transition: all 0.15s;
+            }
             
             figure{
-                width: 100%;
                 max-width: 100%;
-                height: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                height: 100%;
+                
                 img{
                     width: 100%;
-                    height: auto;
-                    object-fit:cover;
-                    object-position: center;
+                    object-fit: cover;
                 }
             }
 
             .product-desc{
+                padding: 2%;
+                height:auto;
                 position: absolute;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                bottom: 0;
                 left: 0;
                 right: 0;
-                bottom: 0;
-                padding: 2%;
                 background-color: var(--darkModeProductBackground);
-                transition: all 0.12s;
+
+                h2, p{
+                    max-width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
                 &:hover{
+                    
                     padding-bottom: 10%;
+                    h2, p{
+                        text-align: center;
+                        text-overflow: unset;
+                        overflow: visible;
+                        white-space: wrap;
+                    }
                 }
             }
         }
