@@ -24,23 +24,70 @@ header{
             padding: 4%;            
         }
     }
-    nav{
-        display: flex;
-        gap: 5%;
-        a{
-            height: 100%;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            padding: 0 2%;
+    .left{
+        .menu-icon{
+            display: none;
+            img{
 
-            &:hover{
-                background-color: var(--darkModeHeaderHover1);
+            }
+        }
+
+        nav{
+            display: flex;
+            gap: 5%;
+            a{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 0 2%;
+    
+                &:hover{
+                    background-color: var(--darkModeHeaderHover1);
+                }
             }
         }
     }
 }
 
 @media (max-width:600px){
+    .left{
+        height: 100%;
+        .menu-icon{
+            display: flex;
+            cursor: pointer;
+            height: 100%;
+            width: 40px;
+            img{
+                height: 100%;
+                width: 100%;
+                
+            }
+        }
 
+        nav{
+            height: 100%;
+            display: none;
+            gap: 5%;
+            a{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 0 2%;
+    
+                &:hover{
+                    background-color: var(--darkModeHeaderHover1);
+                }
+            }
+        }
+
+        
+        &:hover{
+            background-color: var(--darkModeHeaderHover1);
+            nav{
+                display: flex;
+            }
+        }
+    }
 }
