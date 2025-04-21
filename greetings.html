@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/colors.css">
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/greetings/greetings-general.css">
@@ -12,14 +13,14 @@
 <body>
     <main>
         <section id="undetected">
-            <div class="section-dialogue"><p>Welcome.<br>Are you New?</p></div>
+            <h1 class="section-dialogue"><p>Welcome.<br>Are you New?</p></h1>
             <div>
                 <button id="new-user-button">YES</button>
                 <button id="regular-button">NO</button>
             </div>
         </section>
         <section id="register">
-            <div class="section-dialogue"><p>Welcome to CyStores<br>Register your account below...</p></div>
+            <h1 class="section-dialogue"><p>Welcome to CyStores<br>Register your account below...</p></h1>
             <div class="details-form">
                 <form>
                     <fieldset>
@@ -36,7 +37,7 @@
             <div class="wrong-option"><p class="wrong-option-link">I already have an account.</p></div>
         </section>
         <section id="login">
-            <div class="section-dialogue"><p>Welcome back<br>Please log-in...</p></div>
+            <h1 class="section-dialogue"><p>Welcome back<br>Please log-in...</p></h1>
             <div class="details-form">
                 <form>
                     <fieldset>
@@ -45,14 +46,15 @@
                     </fieldset>
                     <fieldset>
                         <legend>Password:</legend>
-                    <input  id="user-password" name="user-password" type="password" required>                    </fieldset>
+                        <input  id="user-password" name="user-password" type="password" required>
+                    </fieldset>
                     
                     <input type="submit" value="Login" id="login-submit" class="s-button">
                 </form>
             </div>
             <div class="wrong-option"><p class="wrong-option-link">I do not have an account.</p></div></section>
         <section id="greeting">
-            <p id="greeting-text">Hello, User.</p>
+            <h1 id="greeting-text">Hello, User.</h1>
         </section>
     </main>
 </body>
