@@ -3,12 +3,12 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
     color: var(--darkMainFont);
 }
 
 body{
-    background-color: var(--darkMainBackground);
+    background-color: var(--darkAccent1);
 }
 
 button{
