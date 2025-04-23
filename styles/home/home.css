@@ -3,6 +3,11 @@ section{
     min-height: 100px;
 }
 
-#alluring-background, #top-picks-section{
+#alluring-background, #top-picks-section, #categories-section{
     background-color: white;
+}
+
+#categories-section{
+    display: grid;
+    height: auto;
 }
