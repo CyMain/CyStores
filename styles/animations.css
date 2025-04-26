@@ -1,0 +1,5 @@
+@keyframes scroll-right{
+    to {
+        transform: translateX(-90%);
+    }
+}

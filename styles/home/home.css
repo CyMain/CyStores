@@ -1,13 +1,124 @@
 
 section{
     min-height: 100px;
+    height: auto;
+    h2{
+        padding: 0 2%;
+    }
 }
 
-#alluring-background, #top-picks-section, #categories-section{
-    background-color: white;
+#top-picks-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    .top-picks-holder{
+        display: flex;
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+
+        button{
+            background-color: var(--darkAccent2);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 10%;
+            &:hover{
+                background-color: var(--darkAccent3);
+            }
+            img{
+                width: auto;
+                height: 40px;
+                object-fit: cover;
+            }
+        }
+
+        .left-slide-button{
+            left: 0;
+        }
+
+        .right-slide-button{
+            right: 0;
+        }
+
+        .top-picks-slider{
+            width: 80%;
+            overflow-x: hidden;
+            .top-picks{
+                width: max-content;
+                display: flex;
+                .top-pick{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 #categories-section{
-    display: grid;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    .categories-grid{
+        margin-top: 20px;
+        display: grid;
+        justify-content: center;
+        column-gap: 30%;
+        row-gap: 5%;
+        grid-template-columns: repeat(2, 20%);
+        height: auto;  
+    }
+
+    .category{
+        flex-direction: column;
+        .category-title{
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .category-items{
+            min-height: 100px;
+            min-width: 150px;
+            width: 100%;
+            overflow-x: hidden;
+            flex-direction: column;
+            background: gradient;
+            border-radius: 20px 20px 0 0;
+            background: linear-gradient(180deg, var(--darkAccent4), var(--darkAccent1));
+        }
+        .item-viewer{
+            height: 120px;
+            overflow: hidden;
+            width: 90%;
+            position: relative;
+            .items{
+                transform: translateX(10%);
+                display: flex;
+                gap: 20%;
+                width: max-content;
+                &:hover{
+                    animation: scroll-right 0.8s forwards ;
+                }
+                .item{
+                    flex: 0 0 calc(100% - 20%);
+                    img{
+                        height: 100px;
+                        width: auto;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+        p{
+            text-align: center;
+            text-wrap: nowrap;
+            font-weight: bold;
+            font-size: 0.8rem;
+            .item-type{
+                font-size: 1rem;
+                color: var(--darkSubFont);
+            }
+        }
+    }
+    
 }

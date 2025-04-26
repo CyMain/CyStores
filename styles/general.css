@@ -14,4 +14,13 @@ body{
 button{
     cursor: pointer;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
