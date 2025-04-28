@@ -9,6 +9,9 @@
 
 body{
     background-color: var(--darkAccent1);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 button{

@@ -1,0 +1,6 @@
+main{
+    margin-top: 10dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 10dvh;
+}
