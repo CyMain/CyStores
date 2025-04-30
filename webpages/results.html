@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results for "Sonic"</title>
     <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/othergeneral.css">
     <link rel="stylesheet" href="../styles/results/resultsgeneral.css">
     <link rel="stylesheet" href="../styles/results/results.css">
     <link rel="stylesheet" href="../styles/header.css">
@@ -18,11 +19,26 @@
         <div class="menu">
             <figure>
                 <img src="../assets/icons/menu-icon-light-blue.png">
-            </figure>
+            </figure><!--Add floating menu in here-->
+            <div class="floating-menu">
+                <nav class="option">
+                    <p>Profile</p>
+                </nav>
+                <nav class="option">
+                    <p>Home</p>
+                </nav>
+                <nav class="option">
+                    <p>Become a Seller</p>
+                </nav>
+                <nav class="option">
+                    <p>Patreon</p>
+                </nav>
+            </div>
         </div>
         <div class="middle">
-            <div>
+            <div class="search-bar">
                 <input placeholder="Search...">
+                <img class="search-icon">
             </div>
             <div class="site-logo">
                 <img src="../assets/logos/CyStores-Logo-transparent1.png">
@@ -69,9 +85,8 @@
                 </div>
                 <button class="results-filter-button">Filter</button>
             </div>
-
         </section>
-        <section id="results-products">
+        <section id="results-products" class="flex-center">
             <div class="products">
                 <div class="product">
                     <button class="details-button">
@@ -272,6 +287,7 @@
                     </div>
                 </div>
             </div>
+            <p class="end-message">Didn't find what you're looking for?</p>
         </section>
     </main>
     <footer>

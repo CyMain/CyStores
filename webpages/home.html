@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/othergeneral.css">
     <link rel="stylesheet" href="../styles/colors.css">
     <link rel="stylesheet" href="../styles/home/home.css">
     <link rel="stylesheet" href="../styles/home/home-general.css">
@@ -18,7 +19,21 @@
         <div class="menu">
             <figure>
                 <img src="../assets/icons/menu-icon-light-blue.png">
-            </figure>
+            </figure><!--Add floating menu in here-->
+            <div class="floating-menu">
+                <nav class="option">
+                    <p>Profile</p>
+                </nav>
+                <nav class="option">
+                    <p>Home</p>
+                </nav>
+                <nav class="option">
+                    <p>Become a Seller</p>
+                </nav>
+                <nav class="option">
+                    <p>Patreon</p>
+                </nav>
+            </div>
         </div>
         <div class="middle">
             <div>
@@ -39,15 +54,48 @@
         <section id="alluring-background">
             
         </section>
-        <section id="top-picks-section">
+        <section id="top-picks-section" class="sliding-sections">
             <h2>Top Picks</h2>
-            <div class="top-picks-holder">
+            <div class="items-holder">
                 <button class="left-slide-button">
                     <img src="../assets/icons/leftPointerLightBlue.png">
                 </button>
-                <div class="top-picks-slider">
-                    <div class="top-picks">
-
+                <div class="items-slider">
+                    <div class="items">
+                        <!--Put 3 top picks of the week inside "top-pick" class
+                            Ensure space for designs and the heading for each category
+                            "This week's best of Clothing!!"
+                        -->
+                        <div class="item">
+                            <button class="details-button">
+                                <img src="../assets/icons/DetailsButtonIcon.png">
+                            </button>
+                            <div class="details">
+                                <div class="extra">
+                                    <p class="p-name">Sonic PFP(No Frame)</p>
+                                    <a class="p-seller">By Cybeepy</a>
+                                    <a class="p-category">Photography</a>
+                                    <figure class="p-rating">
+                                        {Rating in stars image}
+                                    </figure>
+                                    <p class="p-price">$1.99</p>
+                                </div>
+                            </div>
+                            <div class="product-display">
+                                <figure>
+                                    <img class="product-image" src="../assets/sample-images/sonic-logo1.jpg">
+                                </figure>
+                                <div class="overview">
+                                    <p class="p-name">Sonic PFP(No Frame)</p>
+                                    <a class="p-seller">By Cybeepy</a>
+                                    <a class="p-category">Photography</a>
+                                    <figure class="p-rating">
+                                        {Rating in stars}
+                                    </figure>
+                                    <p class="p-price">$1.99</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button class="right-slide-button">
@@ -71,25 +119,14 @@
                                 </figure>
                             </div>
                         </div>
-                        <p>We've Got<br><span class="item-type">Shirts</span></p>
-                    </div>
-                    
-                    
-                </div>
-                <div class="clothing-category category flex-center">
-                    <h2 class="category-title">CLOTHING</h2>
-                    <div class="category-items flex-center">
-                        <div class="item-viewer flex-center">
+                        <p>We've Got</p>
+                        <div class="tag-viewer flex-center">
                             <div class="items">
-                                <figure class="item flex-center">
-                                    <img src="../assets/sample-images/image.png">
-                                </figure>
-                                <figure class="item flex-center">
-                                    <img src="../assets/sample-images/sonic-logo1.jpg">
-                                </figure>
+                                <span class="tag flex-center">Shirts</span>
+                                <span class="tag flex-center">Hedgehogs</span>
                             </div>
                         </div>
-                        <p>We've Got<br><span class="item-type">Shirts</span></p>
+                        
                     </div>
                 </div>
                 <div class="clothing-category category flex-center">
@@ -105,7 +142,14 @@
                                 </figure>
                             </div>
                         </div>
-                        <p>We've Got<br><span class="item-type">Shirts</span></p>
+                        <p>We've Got</p>
+                        <div class="tag-viewer flex-center">
+                            <div class="items">
+                                <span class="tag flex-center">Shirts</span>
+                                <span class="tag flex-center">Hedgehogs</span>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 
