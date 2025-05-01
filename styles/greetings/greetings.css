@@ -1,5 +1,5 @@
 #undetected{
-    display: none;
+    display: flex;
     div{
         margin-top: 5%;
         display: flex;
@@ -66,18 +66,21 @@
         }
     }
 
-    .wrong-option{
-        margin-top: 60px;
-        cursor: pointer;
-        font-size: 0.8rem;
+    
+}
+.extra-option{
+    margin-top: 60px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        letter-spacing: 0.2rem;
+    }
 
-        p{
-            letter-spacing: 0.2rem;
-        }
-
-        &:hover{
-            text-decoration: underline;
-        }
+    &:hover{
+        text-decoration: underline;
     }
 }
 
@@ -90,5 +93,5 @@
 }
 
 #greeting{
-    display: flex;
+    display: none;
 }

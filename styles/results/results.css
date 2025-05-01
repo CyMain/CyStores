@@ -12,6 +12,7 @@ main{
     }
 
     .end-message{
+        text-align: center;
         margin-top: 60px;
         letter-spacing: 0.2rem;
     }
