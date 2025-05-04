@@ -1,0 +1,42 @@
+
+#product-section{
+    padding-top: 8dvh;
+    .prod-desc{
+        flex-direction: column;
+        background-color: var(--darkAccent3);
+        height: auto;
+        min-height: 600px;
+        width: 560px;
+        .main-desc, .more-desc{
+            flex: 1;
+            width: 100%;
+        }   
+        .main-desc{
+            background-color: blue;
+            figure{
+                background-color: red;
+                img{
+                    width: 60%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .desc{
+                background-color: green;
+                .prod-name{
+    
+                }
+                .seller-name{
+    
+                }
+                .prod-rating{
+    
+                }
+            }
+        }
+        .more-desc{
+            background-color: purple;
+        }
+    }
+    
+}
