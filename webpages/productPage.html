@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueBlur1's Profile</title>
+    <title>CyStores</title>
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/general.css">
@@ -11,8 +12,9 @@
     <link rel="stylesheet" href="../styles/colors.css">
     <link rel="stylesheet" href="../styles/productPage/productPage.css">
     <link rel="stylesheet" href="../styles/animations.css">
-    
+
 </head>
+
 <body>
     <header>
         <div class="menu">
@@ -67,7 +69,7 @@
                             <a>CyBeepy</a>
                         </div>
                         <figure class="prod-rating">
-                            <img>
+                            <img>4.5
                         </figure>
                         <div class="prod-categories">
                             <p>Tags: <a class="tags">Photography</a>, <a class="tags">Sonic</a></p>
@@ -80,18 +82,125 @@
                 <div class="more-desc">
                     <article>
                         <h2>More About This Product</h2>
-                        <p>
-                            A legendary Sonic pfp that has even more value than some random ahh pokemon card
-                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    A legendary Sonic pfp that has even more value than some random ahh pokemon card
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    It comes with a ring in the container that is delivered with it.
+                                </p>
+                            </li>
+                        </ul>
                     </article>
                 </div>
             </div>
         </section>
-        <section id="more-like-this-section">
-
+        <section id="more-like-this-section" class="sliding-sections">
+            <h2>More like this</h2>
+            <div class="items-holder">
+                <button class="left-slide-button">
+                    <img src="../assets/icons/leftPointerLightBlue.png">
+                </button>
+                <div class="items-slider">
+                    <div class="items">
+                        <div class="item">
+                            <button class="details-button">
+                                <img src="../assets/icons/DetailsButtonIcon.png">
+                            </button>
+                            <div class="details">
+                                <div class="extra">
+                                    <p class="p-name">Sonic PFP(No Frame)</p>
+                                    <a class="p-seller">By Cybeepy</a>
+                                    <a class="p-category">Photography</a>
+                                    <figure class="p-rating">
+                                        {Rating in stars image}
+                                    </figure>
+                                    <p class="p-price">$1.99</p>
+                                </div>
+                            </div>
+                            <div class="product-display">
+                                <figure>
+                                    <img class="product-image" src="../assets/sample-images/sonic-logo1.jpg">
+                                </figure>
+                                <div class="overview">
+                                    <p class="p-name">Sonic PFP(No Frame)</p>
+                                    <a class="p-seller">By Cybeepy</a>
+                                    <a class="p-category">Photography</a>
+                                    <figure class="p-rating">
+                                        {Rating in stars}
+                                    </figure>
+                                    <p class="p-price">$1.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="right-slide-button">
+                    <img src="../assets/icons/rightPointerLightBlue.png">
+                </button>
+            </div>
         </section>
-        <section>
-
+        <section id="reviews-section">
+            <h2>Top Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                    <div class="user">
+                        <img>
+                        <p class="user-name">Cardan</p>
+                    </div>
+                    <div class="rating">
+                        <img>
+                        <p class="rating-head">Excellent For Posters</p>
+                    </div>
+                    <div class="trans-details">
+                        <p class="date"> Reviewed in Nigeria on March 22, 2025</p>
+                        <p class="trans-prod-details">Dimensions: 25 x 50</p>
+                    </div>
+                    <article class="review-details">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis aut velit totam atque quas
+                        nobis tempore rem, error sequi, reiciendis accusantium cumque laboriosam mollitia optio dolore
+                        voluptatibus quos facilis numquam.
+                    </article>
+                    <div class="helpful">
+                        <p>Was this review helpful?</p>
+                        <div>
+                            <!--Make the buttons not affect the other elements around it when it is hovered over.-->
+                            <button class="helpful-button">Helpful</button>
+                            <button class="report-button">Report</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="user">
+                        <img>
+                        <p class="user-name">Cardan</p>
+                    </div>
+                    <div class="rating">
+                        <img>
+                        <p class="rating-head">Excellent For Posters</p>
+                    </div>
+                    <div class="trans-details">
+                        <p class="date"> Reviewed in Nigeria on March 22, 2025</p>
+                        <p class="trans-prod-details">Dimensions: 25 x 50</p>
+                    </div>
+                    <article class="review-details">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis aut velit totam atque quas
+                        nobis tempore rem, error sequi, reiciendis accusantium cumque laboriosam mollitia optio dolore
+                        voluptatibus quos facilis numquam.
+                    </article>
+                    <div class="helpful">
+                        <p>Was this review helpful?</p>
+                        <div>
+                            <!--Make the buttons not affect the other elements around it when it is hovered over.-->
+                            <button class="helpful-button">Helpful</button>
+                            <button class="report-button">Report</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -121,4 +230,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -27,13 +27,17 @@
             .desc{
                 flex-direction: column; 
                 
-                div{
+                div, > figure{
                     padding: 10px;
                     width: 100%;
                     border-bottom: 1px solid var(--darkAccent4Transparent);
                 }
                 .prod-name{
-                    height: max-content;v
+                    height: max-content;
+                    p{
+                        font-size: 2em;
+                        color: var(--darkAccent4);
+                    }
                 }
                 .seller-name{
     
@@ -68,7 +72,112 @@
         }
         .more-desc{
             border-top: 1px solid var(--darkAccent4Transparent);
+            padding: 10px 20px;
+            h2{
+                margin-bottom: 10px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 0 30px;
+                p{
+                    letter-spacing: 0.2rem;
+                }
+            }
         }
     }
     
+}
+
+#more-like-this-section{
+    h2{
+        margin-bottom: 14px;
+    }
+}
+
+#reviews-section{
+    padding: 10px 10%;
+    h2{
+
+    }
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding-top: 20px;
+        .review{
+            padding-left: 30px;
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .user{
+                display: flex;
+                gap: 10px;
+                img{
+
+                }
+                .user-name{
+                    font-weight: bold;
+                }
+            }
+            .rating{
+                display: flex;
+                gap: 10px;
+                img{
+
+                }
+                .rating-head{
+                    font-weight: bold;
+                }
+            }
+            .trans-details{
+                *{
+                    color: var(--darkAccent4Transparent);
+                }
+                
+                .date{
+
+                }
+                .trans-prod-details{
+
+                }
+            }
+            .review-details{
+
+            }
+            .helpful{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p{
+                    color: var(--darkAccent4Transparent);
+                }
+                div{
+                    display: flex;
+                    gap: 30px;
+                    transition: all 0.12s;
+                    height: 40px;
+                    width: 100%;
+                    button{
+                        color: var(--darkAccent4);
+                        padding: 8px;
+                        border-radius: 20px;
+                        transition: all 0.12s;
+                        &:hover{
+                            border: 1px solid var(--darkAccent4);
+                        }
+                    }
+                    .helpful-button{
+                        background-color: var(--darkAccent6);
+                    }
+                    .report-button{
+                        background-color: transparent;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
