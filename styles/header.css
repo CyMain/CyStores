@@ -20,7 +20,6 @@ header{
     .menu{
         width: auto;
         padding: 0 clamp(10px, 1vw, 50px);
-        cursor: pointer;
         position: relative;
         transition: all 0.12s;
 
@@ -48,7 +47,7 @@ header{
             display:contents;
             opacity: 0;
             flex-direction: column;
-            bottom: -160px;
+            bottom: -180px;
             left: 10px;
             width: max-content;
             height:max-content;
@@ -56,6 +55,7 @@ header{
             border-radius: 20px;
             transition: opacity 0.5s;
             .option{
+                cursor: pointer;
                 display: none;
                 width: 100%;
                 padding: 10px;

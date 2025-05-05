@@ -7,11 +7,21 @@
     --darkAccent6: #000329;
     --darkMainFont: #3971FE;
     --darkSubFont: #7C8DB8;
+
+    --cartAccent:#FFD700;
+    --cartAccent2:#a88f00;
+    --sellerAccent:#800080;
+    --buyerAccent:#008000;
     
 
     --darkAccent1Transparent:#0002104f;
     --darkAccent2Transparent: #00053a81;
     --darkAccent3Transparent:#00031b6e;
-    --darkAccent4Transparent:#dff2ffa2;
+    --darkAccent4Transparent:#dff2ff63;
     --darkAccent5Transparent:#00021675;
+
+    --cartAccentTransparent:#ffd9006e;
+    --cartAccent2Transparent:#a88f00b6;
+    --sellerAccentTransparent:#8000806c;
+    --buyerAccentTransparent:#00800063;
 }

@@ -12,19 +12,28 @@
             width: 100%;
         }   
         .main-desc{
-            background-color: blue;
-            figure{
-                background-color: red;
+            display: flex;
+
+            > figure{
+                background-color: var(--darkAccent6);
+                width: 65%;
+                min-width: 45%;
                 img{
-                    width: 60%;
+                    width: 75%;
                     height: auto;
                     object-fit: cover;
                 }
             }
             .desc{
-                background-color: green;
+                flex-direction: column; 
+                
+                div{
+                    padding: 10px;
+                    width: 100%;
+                    border-bottom: 1px solid var(--darkAccent4Transparent);
+                }
                 .prod-name{
-    
+                    height: max-content;v
                 }
                 .seller-name{
     
@@ -32,10 +41,33 @@
                 .prod-rating{
     
                 }
+                .prod-categories{
+                    .tags{
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .add-to-cart-div{
+                    flex: 1;
+                    border:none;
+                    button{
+                        border-radius: 10px;
+                        padding: 10px;
+                        background-color: var(--cartAccent2);
+                        color: var(--darkAccent4);
+                        box-shadow: 0 0 20px 2px var(--cartAccent2Transparent);
+                        transition: all 0.12s;
+                        &:hover{
+                            box-shadow: 0 0 20px 6px var(--cartAccent2Transparent);
+                        }
+                    }
+                }
             }
         }
         .more-desc{
-            background-color: purple;
+            border-top: 1px solid var(--darkAccent4Transparent);
         }
     }
     

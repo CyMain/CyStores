@@ -63,7 +63,7 @@
                 }
 
                 .stb-button{
-                    background-color: green;
+                    background-color: var(--buyerAccent);
                     &:hover{
                         box-shadow: 0 0 10px 6px rgba(2, 104, 2, 0.384);
                     }
@@ -71,7 +71,7 @@
                 }
 
                 .sts-button{
-                    background-color: purple;
+                    background-color: var(--sellerAccent);
                     &:hover{
                         box-shadow: 0 0 10px 6px rgba(51, 0, 51, 0.7);
                     }
