@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/general.css">
     <link rel="stylesheet" href="../styles/othergeneral.css">
     <link rel="stylesheet" href="../styles/colors.css">
-    <link rel="stylesheet" href="../styles/productPage/productPage.css">
+    <link rel="stylesheet" href="../styles/cart/cart.css">
     <link rel="stylesheet" href="../styles/animations.css">
 </head>
 <body>
@@ -52,7 +52,63 @@
         </div>
     </header>
     <main>
-
+        <section id="cart-cumulative" class="flex-center">
+            <div>
+                <div class="cart-details">
+                    <p>Total Product Cost: <span>$225K</span></p>
+                    <p>Tax Costs: <span>$200</span></p>
+                    <p>Total Shipping Cost: <span>$2K</span></p>
+                    <fieldset class="delivery-dates">
+                        <legend>Delivery Date:</legend>
+                        <div class="date">
+                            <input type="radio" class="date-option" name="date" id="date1">
+                            <label for="date1">Monday 12th Of March</label>
+                        </div>
+                        <div class="date">
+                            <input type="radio" class="date-option" name="date" id="date2">
+                            <label for="date2">Wednesday 12th Of March</label>
+                        </div>
+                        <div class="date">
+                            <input type="radio" class="date-option" name="date" id="date3">
+                            <label for="date3">Friday 12th Of March</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="total flex-center">
+                    <p>Order Total: $<span>227.2K</span></p>
+                </div>
+                <button class="checkout">GO TO CHECKOUT</button>
+            </div>
+        </section>
+        <section id="cart-items-section" class="flex-center">
+            
+            <div class="cart-items flex-center">
+                <h2>Orders:</h2>
+                <div class="cart-item">
+                    <figure class="item-image flex-center">
+                        <img src="../assets/sample-images/sonic-logo1.jpg" alt="item image">
+                    </figure>
+                    <div class="item-details">
+                        <p class="item-name">Sonic PFP(No Frame)</p>
+                        <p class="item-price">$1.99</p>
+                        <div class="item-quantity">
+                            <p>Quantity: 110</p>
+                            <button>Change</button>
+                        </div>
+                        <fieldset class="item-specific">
+                            <legend class="specific-name">Image-Type</legend>
+                            <select>
+                                <option>PNG</option>
+                            </select>
+                        </fieldset>
+                        <div class="remove">
+                            <button class="remove-button">REMOVE</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content">

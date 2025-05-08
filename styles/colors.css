@@ -11,7 +11,8 @@
     --cartAccent:#FFD700;
     --cartAccent2:#a88f00;
     --sellerAccent:#800080;
-    --buyerAccent:#008000;
+    --buyerAccent:#00740E;
+    --deleteAccent:red;
     
 
     --darkAccent1Transparent:#0002104f;
@@ -23,5 +24,6 @@
     --cartAccentTransparent:#ffd9006e;
     --cartAccent2Transparent:#a88f00b6;
     --sellerAccentTransparent:#8000806c;
-    --buyerAccentTransparent:#00800063;
+    --buyerAccentTransparent:#00740E85;
+    --deleteAccentTransparent:#ff0000a2;
 }
