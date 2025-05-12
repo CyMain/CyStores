@@ -20,3 +20,12 @@ document.querySelector('.menu-cart-js').addEventListener('click', () =>{
 document.querySelector('.menu-seller-js').addEventListener('click', () =>{
     window.location.href='../webpages/profileSeller.html';
 })
+
+document.querySelector('#search-bar').addEventListener('keydown', (event) =>{
+    if(event.key=="Enter"){
+        window.location.href="../webpages/results.html";
+    }
+})
+document.querySelector('selector'){
+    
+}
