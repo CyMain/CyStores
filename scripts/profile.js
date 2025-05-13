@@ -1,1 +1,1 @@
-import * as header from './header.js';
+import * as headerAndFooter from './headerandfooter.js';
